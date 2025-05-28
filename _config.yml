@@ -8,10 +8,33 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-include-cache
+
+# Minimal Mistakes theme settings
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+locale: "en-US"
+search: true
+
+# Site Author
+author:
+  name: "Serene Homestay"
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Your home away from home in a peaceful setting"
+  location: "Your Location"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your-email@example.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/serenehomestay"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/serenehomestay"
 
 # Theme settings
 show_downloads: false
