@@ -9,29 +9,22 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
 <meta name="keywords" content="homestay uttarkashi, jai maa gange homestay, accommodation uttarkashi, hotels near ganges, uttarkashi accommodation">
 <meta name="author" content="Jai Maa Gange Homestay">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi">
-<meta property="og:description" content="Experience authentic local living at Jai Maa Gange Homestay in Uttarkashi. Comfortable rooms, home-cooked meals, and peaceful location.">
-<meta property="og:image" content="assets/gallery1.jpg">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi">
-<meta name="twitter:description" content="Experience authentic local living at Jai Maa Gange Homestay in Uttarkashi. Comfortable rooms, home-cooked meals, and peaceful location.">
-<meta name="twitter:image" content="assets/gallery1.jpg">
-
 <!-- Favicon -->
-<!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest"> -->
+<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+<link rel="apple-touch-icon" href="assets/logo.jpeg">
+
+<!-- Bootstrap CSS and JS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
 <!-- Add Font Awesome for social media icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div class="main-content">
-    <h1>Welcome to Jai Maa Gange Homestay</h1>
+    <div class="header-section d-flex align-items-center mb-4">
+        <img src="assets/logo.jpeg" alt="Jai Maa Gange Homestay Logo" class="me-3" style="width: 80px; height: 80px; border-radius: 50%;">
+        <h1>Welcome to Jai Maa Gange Homestay</h1>
+    </div>
     
     <section class="intro">
         <p>Experience authentic local living in our comfortable and welcoming homestay.</p>
@@ -46,66 +39,294 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
             <li>24/7 host support</li>
         </ul>
     </section>    <section class="rooms">
-        <h2>Our Rooms</h2>        <div class="room-types">
-            <div class="room">
-                <div class="room-image">
-                    <img src="assets/standard-room.jpg" alt="Double Room" />
-                </div>
-                <div class="room-info">
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <!-- Room grid for better organization -->
+            <div class="room-grid">
+                <!-- 1. Double Room with Private Bathroom -->
+                <div class="room-card">
                     <h3>Double Room with Private Bathroom</h3>
-                    <p>Perfect for couples or business travelers</p>
-                    <ul class="room-features">
-                        <li>Queen-size bed</li>
-                        <li>Private bathroom</li>
-                        <li>Work desk</li>
-                    </ul>
+                    <div id="doubleRoomCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/standard-room.jpg" class="d-block w-100" alt="Double Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery1.jpg" class="d-block w-100" alt="Double Room View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#doubleRoomCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#doubleRoomCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> One double bed</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-desk"></i> Work desk</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="room">
-                <div class="room-image">
-                    <img src="assets/family-suite.jpg" alt="Triple Room" />
-                </div>
-                <div class="room-info">
+
+                <!-- 2. Triple Room with Private Bathroom -->
+                <div class="room-card">
                     <h3>Triple Room with Private Bathroom</h3>
-                    <p>Comfortable space for small families</p>
-                    <ul class="room-features">
-                        <li>One double bed + One single bed</li>
-                        <li>Private bathroom</li>
-                        <li>Work desk</li>
-                    </ul>
+                    <div id="tripleRoomCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Triple Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery2.jpg" class="d-block w-100" alt="Triple Room View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#tripleRoomCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#tripleRoomCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> One double bed + One single bed</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-desk"></i> Work desk</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="room">
-                <div class="room-image">
-                    <img src="assets/family-suite.jpg" alt="Quadruple Room" />
-                </div>
-                <div class="room-info">
+
+                <!-- 3. Quadruple Room with Private Bathroom -->
+                <div class="room-card">
                     <h3>Quadruple Room with Private Bathroom</h3>
-                    <p>Ideal for families or groups</p>
-                    <ul class="room-features">
-                        <li>Two double beds</li>
-                        <li>Private bathroom</li>
-                        <li>Work desk</li>
-                    </ul>
+                    <div id="quadRoomCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Quadruple Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery3.jpg" class="d-block w-100" alt="Quadruple Room View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#quadRoomCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#quadRoomCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> Two double beds</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-desk"></i> Work desk</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="room">
-                <div class="room-image">
-                    <img src="assets/standard-room.jpg" alt="Dormitory" />
+
+                <!-- 4. Family Room with Private Bathroom -->
+                <div class="room-card">
+                    <h3>Family Room with Private Bathroom</h3>
+                    <div id="familyRoomCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Family Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery4.jpg" class="d-block w-100" alt="Family Room View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#familyRoomCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#familyRoomCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> Two double beds + One single bed</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-couch"></i> Seating area</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="room-info">
-                    <h3>Dormitories</h3>
-                    <p>Budget-friendly shared accommodation</p>
-                    <ul class="room-features">
-                        <li>Bunk beds</li>
-                        <li>Shared bathroom</li>
-                        <li>Locker facilities</li>
-                        <li>Common room access</li>
-                    </ul>
+
+                <!-- 5. Deluxe Family Room with Private Bathroom -->
+                <div class="room-card">
+                    <h3>Deluxe Family Room with Private Bathroom</h3>
+                    <div id="deluxeFamilyCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Deluxe Family Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery5.jpg" class="d-block w-100" alt="Deluxe Family Room View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#deluxeFamilyCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#deluxeFamilyCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> Three double beds</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-couch"></i> Living area</li>
+                            <li><i class="fas fa-tv"></i> Large TV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6. Double Room with Private Bathroom and Kitchen -->
+                <div class="room-card">
+                    <h3>Double Room with Private Bathroom and Kitchen</h3>
+                    <div id="doubleKitchenCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/standard-room.jpg" class="d-block w-100" alt="Double Room with Kitchen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery6.jpg" class="d-block w-100" alt="Double Room with Kitchen View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#doubleKitchenCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#doubleKitchenCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> One double bed</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-utensils"></i> Kitchenette</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7. Triple Room with Private Bathroom and Kitchen -->
+                <div class="room-card">
+                    <h3>Triple Room with Private Bathroom and Kitchen</h3>
+                    <div id="tripleKitchenCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Triple Room with Kitchen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery1.jpg" class="d-block w-100" alt="Triple Room with Kitchen View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#tripleKitchenCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#tripleKitchenCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> One double bed + One single bed</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-utensils"></i> Kitchenette</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 8. Quadruple Room with Private Bathroom and Kitchen -->
+                <div class="room-card">
+                    <h3>Quadruple Room with Private Bathroom and Kitchen</h3>
+                    <div id="quadKitchenCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/family-suite.jpg" class="d-block w-100" alt="Quadruple Room with Kitchen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery2.jpg" class="d-block w-100" alt="Quadruple Room with Kitchen View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#quadKitchenCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#quadKitchenCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> Two double beds</li>
+                            <li><i class="fas fa-bath"></i> Private bathroom</li>
+                            <li><i class="fas fa-utensils"></i> Full kitchen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 9. Double Room with Shared Bathroom -->
+                <div class="room-card">
+                    <h3>Double Room with Shared Bathroom</h3>
+                    <div id="doubleSharedCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/standard-room.jpg" class="d-block w-100" alt="Double Room Shared Bath">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery3.jpg" class="d-block w-100" alt="Double Room Shared Bath View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#doubleSharedCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#doubleSharedCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> One double bed</li>
+                            <li><i class="fas fa-bath"></i> Shared bathroom</li>
+                            <li><i class="fas fa-desk"></i> Work desk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 10. Dormitory -->
+                <div class="room-card">
+                    <h3>Dormitory</h3>
+                    <div id="dormCarousel" class="room-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/standard-room.jpg" class="d-block w-100" alt="Dormitory">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gallery4.jpg" class="d-block w-100" alt="Dormitory View 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dormCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dormCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="room-info mt-3">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-bed"></i> Bunk beds</li>
+                            <li><i class="fas fa-bath"></i> Shared bathroom</li>
+                            <li><i class="fas fa-lock"></i> Locker facilities</li>
+                            <li><i class="fas fa-couch"></i> Common room access</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>    <section class="gallery">
+    </section><section class="gallery">
         <h2>Our Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -198,10 +419,55 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
     }  
     
     body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
         color: var(--text-color);
         line-height: 1.6;
-        background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf2 100%);
-        min-height: 100vh;
+    }
+
+    .header-section {
+        padding: 20px;
+        background-color: var(--background-light);
+        border-radius: 10px;
+    }
+
+    #roomsCarousel {
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #roomsCarousel .carousel-item {
+        height: 500px;
+    }
+
+    #roomsCarousel img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #roomsCarousel .carousel-caption {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #roomsCarousel .carousel-caption h3 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    #roomsCarousel .carousel-caption p,
+    #roomsCarousel .carousel-caption ul {
+        color: #f8f9fa;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
     }
 
     .main-content {
@@ -357,6 +623,100 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
         transition: border-bottom 0.3s ease;
     }    .contact a:hover {
         border-bottom: 1px solid white;
+    }    /* Room styles */
+    .room-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .room-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .room-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .room-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .room-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .room-carousel {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .room-carousel .carousel-item {
+        height: 400px;
+    }
+
+    .room-carousel img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .room-info {
+        padding: 20px;
+        background: var(--background-light);
+        border-radius: 10px;
+    }
+
+    .room-info p {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 15px;
+    }
+
+    .room-info ul li {
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+
+    .room-info ul li i {
+        color: var(--primary-color);
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .carousel-control-next {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .carousel-indicators {
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .carousel-indicators button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
     }
 
     /* Gallery Styles */    .gallery-grid {
