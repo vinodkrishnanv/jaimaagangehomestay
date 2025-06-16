@@ -1,5 +1,5 @@
 # Site settings
-title: Serene Homestay
+title: Jai Maa Gange Homestay
 email: your-email@example.com
 description: >-
   Welcome to our cozy homestay where comfort meets authentic local experience.
@@ -21,7 +21,7 @@ search: true
 
 # Site Author
 author:
-  name: "Serene Homestay"
+  name: "Jai Maa Gange Homestay"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Your home away from home in a peaceful setting"
   location: "Your Location"
@@ -31,10 +31,10 @@ author:
       url: "mailto:your-email@example.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/serenehomestay"
+      url: "https://facebook.com"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/serenehomestay"
+      url: "https://instagram.com"
 
 # Theme settings
 show_downloads: false
