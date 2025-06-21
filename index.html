@@ -25,6 +25,22 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
         <img src="assets/logo.jpeg" alt="Jai Maa Gange Homestay Logo" class="me-3" style="width: 80px; height: 80px; border-radius: 50%;">
         <h1>Welcome to Jai Maa Gange Homestay</h1>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
     <section class="intro">
         <p>Experience authentic local living in our comfortable and welcoming homestay.</p>
@@ -38,7 +54,7 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
             <li>Peaceful location</li>
             <li>24/7 host support</li>
         </ul>
-    </section>    <section class="rooms">
+    </section>    <section class="rooms" id="rooms">
         <h2>Our Rooms</h2>
         <div class="room-container">
             <!-- Room grid for better organization -->
@@ -390,7 +406,7 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
                 </div>
             </div>
         </div>
-    </section><section class="gallery">
+    </section><section class="gallery" id="gallery">
         <h2>Our Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -418,7 +434,7 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
                 <div class="gallery-caption">Evening Ambiance</div>
             </div>
         </div>
-    </section>    <section class="location">
+    </section>    <section class="location" id="location">
         <h2>Our Location</h2>
         <div class="directions-container">
             <div class="transport-info">
@@ -442,7 +458,7 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>Book your stay or ask us any questions:</p>
         <p>Email: <a href="mailto:jmdhomestay@gmail.com">jmdhomestay@gmail.com</a></p>
@@ -473,10 +489,12 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
         </div>
     </section>
 </div>
-
+<footer class="bg-dark text-white text-center py-3">
+    <div>© 2025 Jai Maa Gange Homestay. All rights reserved.</div>
+</footer>
 <style>    :root {
-        --primary-color: #1a4f8b;
-        --secondary-color: #2d9cdb;
+        --primary-color: #40898F;
+        --secondary-color: #5bbec6;;
         --accent-color: #00a8cc;
         --background-light: #f8f9fa;
         --text-color: #2c3e50;
@@ -900,10 +918,13 @@ title: Jai Maa Gange Homestay - Your Perfect Stay in Uttarkashi
         gap: 15px;
         flex-wrap: wrap;
     }
+    a.social-icon {
+        background: white;
+    }
 
     .booking-button {
         padding: 12px 20px;
-        border-radius: 25px;
+        border-radius: 15px;
         background: rgba(255,255,255,0.1);
         color: white;
         text-decoration: none;
